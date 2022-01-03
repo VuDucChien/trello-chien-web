@@ -7,7 +7,11 @@ function Card(props){
      console.log(card)
     return (
         <li className="card-item">
-          {card.cover && <img src={card.cover} className="card-cover"
+          {card.cover && 
+          <img 
+          src={card.cover} 
+          className="card-cover"
+          onMouseDown={e =>e.preventDefault()}
         alt="https://cv.trungquandev.com/"/>}
         {card.title}
       </li>

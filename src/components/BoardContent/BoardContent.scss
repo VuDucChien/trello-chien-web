@@ -1,17 +1,24 @@
 @import '_setting.scss';
 
 .board-content{
-    display: flex;
-    margin: 0 $gap $gap;
+    height: $board-content-height;
+    // display: flex;
+    // margin: 0 $gap $gap;
     overflow-x:auto;// thanh quan
     // &::-webkit-scrollbar{
     //   -webkit-appearance: none;
     // }
+    overflow-y: hidden;
     &::-webkit-scrollbar:horizontal{
       height: 11px;
     }
     &::-webkit-scrollbar-thumb:vertical{
       background-color: $common-element-bg;
       border-radius: 10px;
+    }
+    .column-drop-preview {
+      background-color: rgba(150, 150, 200, 0.1);
+      border: 1px dashed #abc;
+      margin: 5px 45px 5px 5px;
     }
   }
