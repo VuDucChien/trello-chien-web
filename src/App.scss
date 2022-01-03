@@ -9,8 +9,7 @@ body{
 }
 .trello-chien-master{
   height: 100vh; // chieu cao full man
-  display: grid ;
-  grid-template-rows: 50px 60px 1fr; // tu tren xuong co 3 thanh 
+  overflow: hidden;
   line-height: 2em;
   background-color: $board-bg-color;
 }
