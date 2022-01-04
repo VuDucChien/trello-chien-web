@@ -1,17 +1,16 @@
-import  React from 'react'
+import React from 'react'
 
 import './Card.scss'
 
 function Card(props){
-    const {card} = props
-     console.log(card)
+    const { card } = props
     return (
         <li className="card-item">
-          {card.cover && 
-          <img 
-          src={card.cover} 
+          {card.cover &&
+          <img
+          src={card.cover}
           className="card-cover"
-          onMouseDown={e =>e.preventDefault()}
+          onMouseDown={e => e.preventDefault()}
         alt="https://cv.trungquandev.com/"/>}
         {card.title}
       </li>
